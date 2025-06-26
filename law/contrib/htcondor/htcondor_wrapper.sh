@@ -5,7 +5,7 @@
 htcondor_wrapper() {
     # helper to select the correct python executable
     _law_python() {
-        command -v python &> /dev/null && python "$@" || python3 "$@"
+        command -v python3 &> /dev/null && python3 "$@" || python "$@"
     }
 
     #

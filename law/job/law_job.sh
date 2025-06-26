@@ -134,8 +134,8 @@ law_job() {
     }
 
     _law_python() {
-        # forward to python if it exists, otherwise to python3
-        _law_exe_exists python && python "$@" || python3 "$@"
+        # forward to python3 if it exists, otherwise to python
+        _law_exe_exists python3 && python3 "$@" || python "$@"
     }
 
     _law_job_line() {
